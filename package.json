@@ -1,6 +1,6 @@
 {
   "name": "yarn-html-minifier",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "yarn plugin for html minifier",
   "main": "index.js",
   "scripts": {
