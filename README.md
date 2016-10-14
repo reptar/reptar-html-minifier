@@ -1,3 +1,3 @@
-# yarn-html-minifier
+# reptar-html-minifier
 
-yarn plugin for html-minifier
+reptar plugin for html-minifier
