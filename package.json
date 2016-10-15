@@ -1,6 +1,6 @@
 {
   "name": "reptar-html-minifier",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "description": "reptar plugin for html minifier",
   "main": "index.js",
   "scripts": {
