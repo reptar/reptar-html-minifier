@@ -1,7 +1,7 @@
 var minify = require('html-minifier').minify;
 
 module.exports = function(Plugin, options) {
-  Plugin.event.collection.beforeWrite(function(file, fileContent) {
+  function handler(file, fileContent) {
     // Check if individual File disables or changes options of this plugin.
     var filePluginConfig = file.data && file.data.plugins &&
         file.data.plugins['html-minifier'] ?
@@ -19,5 +19,8 @@ module.exports = function(Plugin, options) {
       removeEmptyAttributes: true,
       removeRedundantAttributes: true
     }, options, filePluginConfig.options))];
-  });
+  };
+
+  Plugin.event.file.afterRender(handler);
+  Plugin.event.page.afterRender(handler);
 };
