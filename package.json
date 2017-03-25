@@ -3,12 +3,10 @@
   "version": "0.7.0",
   "description": "reptar plugin for html minifier",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "repository": "git://github.com/reptar/reptar-html-minifier.git",
   "author": "Harry Wolff <hello@hswolff.com> (http://hswolff.com/)",
   "license": "MIT",
   "dependencies": {
-    "html-minifier": "^1.1.1"
+    "html-minifier": "^3.4.2"
   }
 }
