@@ -11,7 +11,14 @@ const reptarHtmlMinifier = require('reptar-html-minifier');
 
 module.exports = {
   lifecycle: {
-    didBuild: reptarHtmlMinifier,
+    didBuild: reptarHtmlMinifier({
+      collapseBooleanAttributes: true,
+      collapseWhitespace: true,
+      removeAttributeQuotes: true,
+      removeComments: true,
+      removeEmptyAttributes: true,
+      removeRedundantAttributes: true
+    }),
   },
 };
 ```
